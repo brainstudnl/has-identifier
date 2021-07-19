@@ -1,0 +1,20 @@
+{
+    "name": "brainstud/has-identifier",
+    "description": "Add a HasIdentifier to the model to take care of generating the identifier",
+    "require": {
+        "php": "^8.0",
+        "illuminate/database": ">=5.6 <9.0",
+        "illuminate/support": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brainstud\\HasIdentifier\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Niek Pijp",
+            "email": "niek@brainstud.nl"
+        }
+    ]
+}
