@@ -10,11 +10,5 @@
         "psr-4": {
             "Brainstud\\HasIdentifier\\": "src/"
         }
-    },
-    "authors": [
-        {
-            "name": "Niek Pijp",
-            "email": "niek@brainstud.nl"
-        }
-    ]
+    }
 }
