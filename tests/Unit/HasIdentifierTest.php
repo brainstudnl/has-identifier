@@ -109,5 +109,4 @@ class HasIdentifierTest extends TestCase
         $model = TestModelUuid::create();
         $this->assertEquals('uuid', $model->getRouteKeyName());
     }
-
 }

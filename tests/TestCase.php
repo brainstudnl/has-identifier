@@ -25,9 +25,6 @@ class TestCase extends \Orchestra\Testbench\TestCase
             '--database' => 'testing',
             '--path' => realpath(__DIR__ . '/database/migrations')
         ]);
-        //$this->artisan('migrate', ['--database' => 'testing'])->run();
-        //$this->loadMigrationsFrom(__DIR__ . '/database/migrations');
-        //$this->loadLaravelMigrations();
     }
 
     public function setUp(): void

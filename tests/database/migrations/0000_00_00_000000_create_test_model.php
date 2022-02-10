@@ -20,5 +20,4 @@ class CreateTestModel extends Migration
     {
         Schema::dropIfExists('test_models');
     }
-
-};
+}
