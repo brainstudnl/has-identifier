@@ -3,12 +3,23 @@
     "description": "Add a HasIdentifier to the model to take care of generating the identifier",
     "require": {
         "php": "^7.4 || ^8.0",
-        "illuminate/database": ">=5.6 <9.0",
-        "illuminate/support": "^8.2"
+        "laravel/framework": "^8.0"
     },
     "autoload": {
         "psr-4": {
-            "Brainstud\\Packages\\HasIdentifier\\": "src/"
+            "Brainstud\\HasIdentifier\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Brainstud\\HasIdentifier\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^6.23"
     }
 }
