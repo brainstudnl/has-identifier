@@ -1,9 +1,14 @@
 <?php
-namespace Brainstud\Packages\HasIdentifier;
+namespace Brainstud\HasIdentifier;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
 
+/**
+ * @property string $short_identifier
+ * @property string $identifier_value
+ * @method static Builder identifiedBy(string $identifier)
+ */
 trait HasIdentifier
 {
     protected static function bootHasIdentifier()
