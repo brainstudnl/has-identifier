@@ -1,34 +1,67 @@
 # Has Identifier
 
 ## Installation
+Require the package
 
-1. Add the brainstud group registry to `composer.json`
-
-```
-"repositories": {
-    "3254464": {
-        "type": "composer",
-        "url": "https://gitlab.com/api/v4/group/3254464/-/packages/composer/"
-    }
-},
+```bash
+composer require brainstud/has-identifier
 ```
 
-2. Add your gitlab token to the composer config
+## Usage
+Add the `HasIdentifier` trait to your model. 
 
-`composer config --global --auth gitlab-token.gitlab.com YOUR_TOKEN`
+```php
+/**
+ * @property string $identifier
+ */
+class Item extends Model
+{
+    use HasIdentifier;
+    
+    protected $fillable = [
+        'identifier'
+    ];
+}
+```
 
-3. Require the package
-`composer require brainstud/has-identifier`
+### Use a different identifier attribute
+The trait will use the `identifier` property of your model to generate an identifier to.
+You can overwrite the property the trait uses by setting the `identifierAttribute` on your model.
 
-4. Add the trait
+```php
+/**
+ * @property string $identifier
+ */
+class Item extends Model
+{
+    use HasIdentifier;
+    
+    protected string $identifierAttribute = 'uuid';
+    
+    protected $fillable = [
+        'uuid'
+    ];
+}
+```
 
-`use HasIdentifier;`
+### Find by identifier
+There are different ways to get the model by identifier.
 
-## Updating
+```php
+// Find method
+$model = Item::findByIdentifier($uuid);
+$model = Item::findOrFailByIdentifier($uuid);
 
-1. Update the code
-2. Update the tag: `git tag v1.0.1`
-3. Push the new tag `git push origin v1.0.1`
-4. Publish the new version: `curl --data tag=v1.0.0 "https://<DEPLOY TOKEN SEE 1PASSWORD>:<YOUR API TOKEN>@gitlab.com/api/v4/projects/28242247/packages/composer"`
-5. Check the [packages](https://gitlab.com/brainstud/packages/has-identifier/-/packages) page if it was successfull
-6. Update the package in your project with composer
+// Scope
+$model = Item::identifiedBy($uuid)->first();
+```
+
+## Test
+You can run the tests with
+
+```bash
+composer test
+```
+
+## License
+has-identifier is open-sourced software licensed under the [MIT License](LICENSE)
