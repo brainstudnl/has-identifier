@@ -1,4 +1,5 @@
 # Has Identifier
+Automatically fill the `identifier` of your model by adding the `HasIdentifier` trait.
 
 ## Installation
 Require the package
@@ -22,6 +23,12 @@ class Item extends Model
         'identifier'
     ];
 }
+```
+
+The identifier will be filled on creation.
+```php
+$model = Item::create();
+echo $model->identifier;
 ```
 
 ### Use a different identifier attribute
