@@ -3,7 +3,7 @@
     "description": "Add a HasIdentifier to the model to take care of generating the identifier",
     "require": {
         "php": "^7.4 || ^8.0",
-        "laravel/framework": "^8.0|^9"
+        "laravel/framework": "^8.0|^9|^10"
     },
     "autoload": {
         "psr-4": {
