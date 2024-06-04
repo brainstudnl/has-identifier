@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f22b5f1677e4b155e8e28ab0997ebcb",
+    "content-hash": "776b09ff858c70aa86fd6635d912847e",
     "packages": [
         {
             "name": "brick/math",
@@ -1243,16 +1243,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.72.3",
+            "version": "2.72.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "0c6fd108360c562f6e4fd1dedb8233b423e91c83"
+                "reference": "afd46589c216118ecd48ff2b95d77596af1e57ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/0c6fd108360c562f6e4fd1dedb8233b423e91c83",
-                "reference": "0c6fd108360c562f6e4fd1dedb8233b423e91c83",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/afd46589c216118ecd48ff2b95d77596af1e57ed",
+                "reference": "afd46589c216118ecd48ff2b95d77596af1e57ed",
                 "shasum": ""
             },
             "require": {
@@ -1286,8 +1286,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-3.x": "3.x-dev",
-                    "dev-master": "2.x-dev"
+                    "dev-master": "3.x-dev",
+                    "dev-2.x": "2.x-dev"
                 },
                 "laravel": {
                     "providers": [
@@ -1346,7 +1346,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-25T10:35:09+00:00"
+            "time": "2024-06-03T19:18:41+00:00"
         },
         {
             "name": "nette/schema",
@@ -5052,16 +5052,16 @@
         },
         {
             "name": "orchestra/testbench-core",
-            "version": "v6.50.1",
+            "version": "v6.50.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench-core.git",
-                "reference": "e2f995addf1afc57dea618d0460151dea3a7ad45"
+                "reference": "5460274d1f85a4880892389ba6e4d0697d4ee7ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/e2f995addf1afc57dea618d0460151dea3a7ad45",
-                "reference": "e2f995addf1afc57dea618d0460151dea3a7ad45",
+                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/5460274d1f85a4880892389ba6e4d0697d4ee7ed",
+                "reference": "5460274d1f85a4880892389ba6e4d0697d4ee7ed",
                 "shasum": ""
             },
             "require": {
@@ -5137,7 +5137,7 @@
                 "issues": "https://github.com/orchestral/testbench/issues",
                 "source": "https://github.com/orchestral/testbench-core"
             },
-            "time": "2024-06-01T09:13:34+00:00"
+            "time": "2024-06-04T04:49:13+00:00"
         },
         {
             "name": "phar-io/manifest",
